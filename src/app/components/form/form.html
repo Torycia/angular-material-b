@@ -1,0 +1,29 @@
+
+<div class="grid gap-4 m-2 p-5 lg:max-w-3xl lg:mx-auto shadow-lg rounded-2xl lg:p-20 bg-white">
+
+<mat-form-field>
+  <mat-label>Email</mat-label>
+  <input matInput>
+</mat-form-field>
+
+
+<mat-form-field>
+  <mat-label>Select</mat-label>
+  <mat-select>
+    <mat-option value="one">First option</mat-option>
+    <mat-option value="two">Second option</mat-option>
+    <mat-option value="three">Third option</mat-option>
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field>
+  <mat-label>Textarea</mat-label>
+  <textarea matInput></textarea>
+</mat-form-field>
+
+<mat-checkbox [formControl]="hideRequiredControl">Hide required marker</mat-checkbox>
+
+<button matButton="filled">Submit</button>
+
+
+</div>

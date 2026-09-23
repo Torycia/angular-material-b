@@ -1,3 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import 'tailwindcss';
+
+@theme {
+  --color-primary: #008000;
+  --color-secondary: #F0FDF4;
+  --radius-md: 8px;
+  --color-white: #ffffff;
+}
+
+@media (max-width: 639px) {
+  .mobile-icon-button {
+    --mat-button-filled-icon-spacing: 0px;
+    --mat-button-outlined-icon-spacing: 0px;
+  }
+}
+
+:root {
+  --ds-primary: var(--color-primary);
+  --ds-secondary: var(--color-secondary);
+  --ds-radius-md: var(--radius-md);
+  --ds-color-white: var(--color-white);
+}
